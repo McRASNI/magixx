@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="bin/www" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="$PROJECT_DIR$/../node-v0.12.2-darwin-x64/bin/node" path-to-js-file="Server/bin/www" application-parameters="Server/app.js" working-dir="$PROJECT_DIR$">
+    <envs>
+      <env name="DEBUG" value="Magix" />
+    </envs>
+    <browser url="http://localhost:3000/" />
+    <RunnerSettings RunnerId="Basic" />
+    <RunnerSettings RunnerId="debuggableProgram" />
+    <ConfigurationWrapper RunnerId="Basic" />
+    <ConfigurationWrapper RunnerId="debuggableProgram" />
+    <method />
+  </configuration>
+</component>

@@ -1,0 +1,31 @@
+tbody {
+    background-color: black;
+}
+
+th,tr {
+    color: white;
+
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+
+th {
+    font-size: 25px;
+    background-color: rgb(184, 36, 62);
+}
+
+td {
+    font-size: 20px;
+}
+
+td.product-picture {
+    width: 200px;
+    text-align:center;
+    vertical-align:middle;
+}
+

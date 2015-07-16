@@ -1,0 +1,19 @@
+
+<div id="chatHolder" class="container">
+
+</div>
+ <footer class="footer" ng-controller="FooterController">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <ul class="foot-ul">
+                    <li ng-class="{active:isLocationActive('/aboutUs')}"><a href="#/aboutUs">About us</a></li>
+                    <li ng-class="{active:isLocationActive('/jobs')}"><a href="#/jobs">Jobs</a></li>
+                    <li ng-class="{active:isLocationActive('/stores')}"><a href="#/stores">Stores</a></li>
+                    <li id="openChat" ng-if="validateChat()"><button id="chat" ng-click="openChat()" class="btn btn-sm">Chat with Us!</button></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</footer>

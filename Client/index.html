@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/authStyle.css" rel="stylesheet">
+<link href="css/chatStyle.css" rel="stylesheet">
+
+<!--View CSS-->
+<link href="views/order/order.css" rel="stylesheet">
+<link href="views/catalog/catalog.css" rel="stylesheet">
+<link href="views/product/product.css" rel="stylesheet">
+<link href="views/footer/footer.css" rel="stylesheet">
+
+<script src="libs/jquery/jquery.js"></script>
+<script src="libs/socketIOClient/socketIO.js"></script>
+<script src="libs/bootstrap/bootstrap.min.js"></script>
+<script src="libs/angular/angular.js"></script>
+<script src="libs/angular/angular-route.js"></script>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+<!--Main App-->
+<script src="magixApp.js"></script>
+
+<!--Views-->
+<script src="views/views.js"></script>
+<script src="views/footer/footer.js"></script>
+<script src="views/header/header.js"></script>
+<script src="views/home/home.js"></script>
+<script src="views/catalog/catalog.js"></script>
+<script src="views/order/order.js"></script>
+<script src="views/query/query.js"></script>
+<script src="views/recipes/recipes.js"></script>
+<script src="views/auth/auth.js"></script>
+
+<!--Services-->
+<script src="services/sessionService.js"></script>
+
+<!--Factories-->
+<script src="factories/catalogFactory.js"></script>
+<script src="factories/configFactory.js"></script>
+<script src="factories/authFactory.js"></script>
+<script src="factories/orderFactory.js"></script>
+<script src="factories/queryFactory.js"></script>
+<script src="factories/recipesFactory.js"></script>
+<script src="factories/socketFactory.js"></script>
+
+<!--Directives-->
+<script src="directives/chatDirective.js"></script>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Apothecary-Potions for all</title>
+    </head>
+    <body ng-app="magix">
+        <div ng-include="'views/header/header.html'"></div>
+        <div class="col-lg-10 container" ng-view>
+
+        </div>
+
+        <div ng-include="'views/footer/footer.html'"></div>
+    <!--    <script>
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        })
+        </script>-->
+    </body>
+
+</html>
